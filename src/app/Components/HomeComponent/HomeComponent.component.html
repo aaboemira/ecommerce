@@ -1,0 +1,9 @@
+<h1>{{storeInfo.name}}</h1>
+
+<h3>Our Branches:</h3>
+<!-- Structural Directives -->
+<ul>
+  <li *ngFor="let item of storeInfo.branches">
+    {{item}}
+  </li>
+</ul>

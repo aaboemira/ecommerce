@@ -1,0 +1,11 @@
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" [src]="prd?.imgURL" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{prd?.name}}</h5>
+    <p class="card-text">Quantity:{{prd?.quantity}}</p>
+    <a (click)="prevPrd()" class="btn btn-warning">Previous product</a>
+    <a (click)="goBack()" class="btn btn-primary">Go Back</a>
+    <a (click)="nextPrd()" class="btn btn-success">Next Product</a>
+
+  </div>
+</div>
