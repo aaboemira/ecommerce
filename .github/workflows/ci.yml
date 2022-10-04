@@ -19,9 +19,14 @@ jobs:
           with:
             path: ~/.npm
             key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+<<<<<<< HEAD
             restore-keys: |
               ${{ runner.os }}-node-
  name: NPM Install
+=======
+
+- name: NPM Install
+>>>>>>> 0a60f95472dda5478fbef8ba909c244f98c9b07b
   run: npm install
 
  name: NPM Install Angular
